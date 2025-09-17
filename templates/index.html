@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Tools Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-900 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">AI Tools</h1>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mx-auto py-12 text-center">
+    <h1 class="text-4xl font-bold mb-4">Welcome to AI Tools Suite</h1>
+    <p class="text-gray-600 text-lg mb-12">Choose a tool below:</p>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Translator -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+        <h2 class="text-2xl font-semibold mb-3">🌍 Translator</h2>
+        <p class="text-gray-600 mb-6">Translate text into multiple languages.</p>
+        <a href="/translate" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+          Go to Translator
+        </a>
+      </div>
+
+      <!-- Currency Converter -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+        <h2 class="text-2xl font-semibold mb-3">💱 Currency Converter</h2>
+        <p class="text-gray-600 mb-6">Convert between global currencies in real-time.</p>
+        <a href="/currency" class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition">
+          Go to Converter
+        </a>
+      </div>
+
+      <!-- Resume → Portfolio -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+        <h2 class="text-2xl font-semibold mb-3">📄 Resume → Portfolio</h2>
+        <p class="text-gray-600 mb-6">Upload your resume and generate portfolio-ready data.</p>
+        <a href="/portfolio" class="inline-block bg-yellow-500 text-white px-6 py-2 rounded-lg hover:bg-yellow-600 transition">
+          Go to Resume Parser
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
