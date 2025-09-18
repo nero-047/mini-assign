@@ -8,7 +8,7 @@
 ---
 
 ## 🎥 Demo
-[![Watch Demo](docs/screenshots/demo.png)](https://youtube.com/your-video-link)
+[![Watch Demo](uploads/thumb.png)](uploads/vid0.mp4)
 
 ---
 
