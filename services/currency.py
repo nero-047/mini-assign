@@ -2,23 +2,22 @@
 # Base currency = USD
 
 EXCHANGE_RATES = {
-    "USD": 1.0,
-    "INR": 83.0,       # Indian Rupee
-    "EUR": 0.92,       # Euro
-    "GBP": 0.79,       # British Pound
-    "JPY": 148.0,      # Japanese Yen
-    "AUD": 1.55,       # Australian Dollar
-    "CAD": 1.35,       # Canadian Dollar
-    "CHF": 0.91,       # Swiss Franc
-    "CNY": 6.95,       # Chinese Yuan
-    "SGD": 1.38,       # Singapore Dollar
-    "NZD": 1.68,       # New Zealand Dollar
-    "HKD": 7.83,       # Hong Kong Dollar
-    "SEK": 10.6,       # Swedish Krona
-    "KRW": 1330.0,     # South Korean Won
-    "MXN": 17.0,       # Mexican Peso
-    "BRL": 5.0,        # Brazilian Real
-    "ZAR": 18.0        # South African Rand
+    "USD": 1.0,          # US Dollar
+    "INR": 87.996,       # Indian Rupee  
+    "EUR": 0.8473,       # Euro  
+    "GBP": 0.7348,       # British Pound 
+    "JPY": 147.16,       # Japanese Yen  
+    "AUD": 1.5074,       # Australian Dollar 
+    "CAD": 1.3785,       # Canadian Dollar  
+    "CHF": 0.7902,       # Swiss Franc  
+    "CNY": 7.1074,       # Chinese Yuan 
+    "SGD": 1.2796,       # Singapore Dollar
+    "NZD": 1.6900,       # New Zealand Dollar
+    "HKD": 7.7747,       # Hong Kong Dollar
+    "KRW": 1382.3,       # South Korean Won
+    "MXN": 18.328,       # Mexican Peso
+    "BRL": 5.3005,       # Brazilian Real
+    "ZAR": 18.055        # South African Rand
 }
 
 def convert_currency(amount: float, from_currency: str, to_currency: str):
