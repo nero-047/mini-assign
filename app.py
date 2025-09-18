@@ -3,8 +3,10 @@ from flask import Flask, request, jsonify, render_template
 from services.translator import translate_text
 from services.currency import convert_currency
 from services.portfolio import resume_to_portfolio
+from flask_cors import CORS
 
 app = Flask(__name__)
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
@@ -26,8 +28,7 @@ def translate():
         dest = data.get("dest", "en")
         result = translate_text(text, dest)
         return jsonify(result)
-
-    # GET → load form
+    
     return render_template("translate.html", title="Translator")
 
 
@@ -49,7 +50,6 @@ def currency():
         result = convert_currency(amount, from_currency, to_currency)
         return jsonify(result)
 
-    # GET → load form
     return render_template("currency.html", title="Currency Converter")
 
 
@@ -78,7 +78,6 @@ def portfolio():
         except Exception as e:
             return jsonify({"error": str(e)}), 500
 
-    # GET → load form
     return render_template("portfolio.html", title="Resume → Portfolio")
 
 

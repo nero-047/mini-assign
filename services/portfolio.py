@@ -11,7 +11,7 @@ from services.parser import extract_resume_data  # fallback
 def resume_to_portfolio(file_path: str) -> dict:
     """
     Convert a resume file into portfolio-ready JSON.
-    Uses resume-parser if available, else falls back to regex parser.
+    Try to use resume-parser if available, else falls back to custom parser.
     """
 
     if USE_RESUME_PARSER:

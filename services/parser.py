@@ -3,7 +3,7 @@ import os
 import pdfplumber
 import docx
 
-# ---------------- File Text Extraction ---------------- #
+# ---------------- Resume As Text Extraction ---------------- #
 def extract_text_from_pdf(file_path: str) -> str:
     """Extract text from PDF file."""
     text = ""
@@ -162,7 +162,7 @@ def extract_resume_data(file_path: str) -> dict:
 # ---------------- Bio Generator ---------------- #
 def generate_bio(parsed_data: dict) -> str:
     """
-    Generate a concise bio from parsed resume data.
+    Generate a concise bio from parsed resume data or simply a combination pf data.
     """
     summary = parsed_data.get("about", {}).get("summary", "")
     skills = parsed_data.get("skills", [])
